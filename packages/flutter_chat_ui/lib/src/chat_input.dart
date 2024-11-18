@@ -62,8 +62,9 @@ class _ChatInputState extends State<ChatInput> {
 
   @override
   Widget build(BuildContext context) {
-    final backgroundColor =
-        context.select((ChatTheme theme) => theme.backgroundColor);
+    // final backgroundColor =
+    //     context.select((ChatTheme theme) => theme.backgroundColor);
+    final backgroundColor = Colors.white;
     final inputTheme = context.select((ChatTheme theme) => theme.inputTheme);
 
     final onAttachmentTap = context.read<OnAttachmentTapCallback?>();
